@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: #ffffff;
+}
+p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 80px;
+}
+.first{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./images/hero-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1980px;
+    min-height: 100vh;
+}
+.logo{
+    max-width: 258px;
+    max-height: 32px;
+}
+header{
+    padding: 40px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    
+}
+.header_button{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+.button{
+    padding: 8px 56px;
+    border: 1px solid #FFFFFF;
+    background-color: #A24DE8;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 80px;
+    text-transform: lowercase;
+    transition: all 0.3s ease;
+    max-width: 460px;
+}
+
+
+
+.login{
+    background-color: #FFFFFF;
+    color: #140E17;
+}
+.first_content{
+    display: flex;
+    flex-direction: column;
+    max-width: 46%;
+    margin-left: 97px;
+    margin-top: 200px;
+    
+}
+h2{
+    
+    font-size: 80px;
+    line-height: 80px;
+}
+h2.first_title{
+    /*word-spacing:5px;*/
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 25px;
+}
