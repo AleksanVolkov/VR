@@ -54,6 +54,9 @@ a {
     transition: all 0.3s ease;
     max-width: 460px;
 }
+.button:hover{
+    background-color: #6f359f;
+}
 
 
 
@@ -79,4 +82,30 @@ h2.first_title{
     font-size: 100px;
     line-height: 100px;
     margin-bottom: 25px;
+}
+.new_nft_part{
+   display: flex;
+   justify-content: space-between;
+   max-width: 1680px;
+    margin: 0 auto;
+    padding-top:  320px;
+}
+.nft_content{
+    max-width: 830px;
+    margin-left: 20px;
+}
+.nft_content h2{
+    margin-bottom: 32px;
+}
+.all_content{
+    background-color:#140E17 ;
+}
+.img{
+    background: url(./images/img-group.webp);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 860px;
+    height: 800px;
+    margin-top: 80px;
+    margin-right: 20px;
 }
