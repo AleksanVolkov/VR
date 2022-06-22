@@ -11,6 +11,10 @@ p{
     line-height: 32px;
     margin-bottom: 80px;
 }
+.box{
+    max-width: 1680px;
+    margin: 0 auto;
+}
 .first{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./images/hero-background.webp);
     background-size: cover;
@@ -24,15 +28,11 @@ p{
 }
 header{
     padding: 40px 10px 0 10px;
-    display: flex;
     justify-content: space-between;
     height: 80px;
-    max-width: 1680px;
-    margin: 0 auto;
 }
 a {
     text-decoration: none;
-    
 }
 .header_button{
     font-weight: 600;
@@ -57,9 +57,6 @@ a {
 .button:hover{
     background-color: #6f359f;
 }
-
-
-
 .login{
     background-color: #FFFFFF;
     color: #140E17;
@@ -70,10 +67,8 @@ a {
     max-width: 46%;
     margin-left: 97px;
     margin-top: 200px;
-    
 }
 h2{
-    
     font-size: 80px;
     line-height: 80px;
 }
@@ -83,11 +78,11 @@ h2.first_title{
     line-height: 100px;
     margin-bottom: 25px;
 }
+.flex{
+    display: flex;
+}
 .new_nft_part{
-   display: flex;
-   justify-content: space-between;
-   max-width: 1680px;
-    margin: 0 auto;
+    justify-content: space-between;
     padding-top:  320px;
 }
 .nft_content{
@@ -108,4 +103,32 @@ h2.first_title{
     height: 800px;
     margin-top: 80px;
     margin-right: 20px;
+}
+.card{
+    margin-top: 80px;
+    width: 550px;
+    height: 730px;
+}
+#card_1{
+    background:url(./images/img-1.webp);
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-right: 20px;
+    
+}
+#card_2{
+    background:url(./images/img-2.webp);
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#card_3{
+    background:url(./images/img-3.webp);
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-left: 20px;
+}
+.wrapper{
+    margin-top: 320px;
 }
