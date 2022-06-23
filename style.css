@@ -62,8 +62,6 @@ a {
     color: #140E17;
 }
 .first_content{
-    display: flex;
-    flex-direction: column;
     max-width: 46%;
     margin-left: 97px;
     margin-top: 200px;
@@ -73,13 +71,17 @@ h2{
     line-height: 80px;
 }
 h2.first_title{
-    /*word-spacing:5px;*/
     font-size: 100px;
     line-height: 100px;
     margin-bottom: 25px;
 }
-.flex{
+.flex_row{
     display: flex;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .new_nft_part{
     justify-content: space-between;
@@ -108,13 +110,13 @@ h2.first_title{
     margin-top: 80px;
     width: 550px;
     height: 730px;
+    padding:26% 25px 0 25px;
 }
 #card_1{
     background:url(./images/img-1.webp);
     background-repeat:no-repeat;
     background-size:contain;
     margin-right: 20px;
-    
 }
 #card_2{
     background:url(./images/img-2.webp);
@@ -131,4 +133,110 @@ h2.first_title{
 }
 .wrapper{
     margin-top: 320px;
+    margin-bottom: 320px;
+}
+.card h2{
+    font-size: 56px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.book_demo{
+    height: 790px;
+    background:url(./images/background-book-a-demo.svg);
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 320px;
+}
+.book_demo h2{
+    margin-bottom: 40px;
+}
+.trusted_img{
+    margin-top: 80px;
+    background:url(./images/trusted-by.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 900px;
+    max-width: 100%;
+}
+.slide_item{
+    max-width: 840px;
+    background-color:#241c28;
+    height: 100%;
+    border-radius:25px;
+    padding: 40px;
+    margin-top: 80px;
+}
+.slide_logo{
+    background-color:#140E17;
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    margin-right: 27px;
+}
+.logo_img{
+    background:url(./images/wow.webp);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:75px;
+    height: 75px;
+}
+.slide_field{
+    align-items:center;
+}
+.slide_content{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+}
+h5{
+    font-size: 28px;
+}
+.text p{
+    margin-bottom: 60px;
+}
+.img_circl{
+    background:url(./images/footer-logo.svg);
+    width: 90px;
+    height: 90px;
+    margin-bottom: 80px;
+}
+.about_us{
+    margin-bottom:80px;
+}
+.footer_link{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.line{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding-top: 80px;
+}
+.footer_adres{
+    margin-bottom: 180px;
+}
+.follow{
+    margin-bottom: 60px;
+}
+.logoA{
+    background:url(./images/inst.svg);
+    width: 48px;
+    height: 48px;
+    margin-right: 30px;
+}
+.logoB{
+    background:url(./images/facebook.svg);
+    width: 48px;
+    height: 48px;
+    margin-right: 30px;
+}
+.logoC{
+    background:url(./images/LinkedIn.svg);
+    width: 48px;
+    height: 48px;
 }
