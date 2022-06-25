@@ -165,7 +165,22 @@ h2.first_title{
     height: 100%;
     border-radius:25px;
     padding: 40px;
-    margin-top: 80px;
+}
+#slide1{
+    position: absolute;
+    left: 50%;
+    z-index: 8;
+    transform: translateX(-50%);
+}
+#slide2{
+    z-index: 7;
+    transform: translateX(50%) rotate(-5deg);
+}
+#slide3{
+    z-index: 6;
+    transform: translateX(-50%) rotate(5deg);
+    
+    
 }
 .slide_logo{
     background-color:#140E17;
@@ -239,4 +254,30 @@ h5{
     background:url(./images/LinkedIn.svg);
     width: 48px;
     height: 48px;
+}
+.slide_wapper{
+    max-width: 1600px;
+     margin-top: 120px;
+     position: relative;
+}
+.next{
+    background: url(./images/icons8-вперед-90.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 185px;
+    right: 240px;
+}
+
+.prev{
+    background: url(./images/icons8-назад-90.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 185px;
+    left: 240px;
 }
