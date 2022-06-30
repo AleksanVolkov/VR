@@ -1,10 +1,10 @@
-const prev = document.querySelector('.prev'),
-      next = document.querySelector('.next');
 
 
-
-
-      next.addEventListener('click', ()=>{
-        
-
-      })
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });

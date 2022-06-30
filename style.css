@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Neue';           
+    src: url("./fonts/NeueMachina-Regular.woff2") ;
+         
+                  
+    font-style: normal;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -5,11 +12,12 @@
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
 }
+
 p{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 80px;
+    font-size: calc(18px + 6 *(100vw/1980));
+    line-height: calc(18px + 14 *(100vw/1980));
+    margin-bottom: 30px;
 }
 .box{
     max-width: 1680px;
@@ -23,8 +31,8 @@ p{
     min-height: 100vh;
 }
 .logo{
-    max-width: 258px;
-    max-height: 32px;
+    width: 258px;
+    height: 32px;
 }
 header{
     padding: 40px 10px 0 10px;
@@ -41,18 +49,19 @@ a {
     padding: 8px 12px;
     border-radius: 8px;
 }
+
 .button{
+    box-sizing:border-box;
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
     background-color: #A24DE8;
     border-radius: 100px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 500;
-    font-size: 56px;
-    line-height: 80px;
+    font-size: calc(20px + 36 *(100vw/1980));
     text-transform: lowercase;
     transition: all 0.3s ease;
-    max-width: 460px;
+    
 }
 .button:hover{
     background-color: #6f359f;
@@ -62,17 +71,21 @@ a {
     color: #140E17;
 }
 .first_content{
-    max-width: 46%;
+    max-width: 900px;
     margin-left: 97px;
     margin-top: 200px;
 }
 h2{
-    font-size: 80px;
-    line-height: 80px;
+    font-family: 'Neue';           
+
+    box-sizing:border-box;
+    font-size: calc(27px + 53 *(100vw/1980));
+    line-height: calc(27px + 53 *(100vw/1980));
+    
 }
 h2.first_title{
-    font-size: 100px;
-    line-height: 100px;
+    font-size: calc(27px + 73 *(100vw/1980));
+    line-height: calc(27px + 73 *(100vw/1980));
     margin-bottom: 25px;
 }
 .flex_row{
@@ -85,7 +98,7 @@ h2.first_title{
 }
 .new_nft_part{
     justify-content: space-between;
-    padding-top:  320px;
+    padding-top: 260px;
 }
 .nft_content{
     max-width: 830px;
@@ -97,6 +110,7 @@ h2.first_title{
 .all_content{
     background-color:#140E17 ;
 }
+
 .img{
     background: url(./images/img-group.webp);
     background-size:contain;
@@ -105,6 +119,10 @@ h2.first_title{
     height: 800px;
     margin-top: 80px;
     margin-right: 20px;
+}
+.card_field{
+    justify-content: center;
+    gap: 40px;
 }
 .card{
     margin-top: 80px;
@@ -116,28 +134,28 @@ h2.first_title{
     background:url(./images/img-1.webp);
     background-repeat:no-repeat;
     background-size:contain;
-    margin-right: 20px;
 }
 #card_2{
     background:url(./images/img-2.webp);
     background-repeat:no-repeat;
     background-size:contain;
-    margin-right: 20px;
-    margin-left: 20px;
 }
 #card_3{
     background:url(./images/img-3.webp);
     background-repeat:no-repeat;
     background-size:contain;
-    margin-left: 20px;
 }
 .wrapper{
     margin-top: 320px;
     margin-bottom: 320px;
 }
+.wrapper h2{
+    margin-left: 20px;
+}
+
 .card h2{
-    font-size: 56px;
-    line-height: 50px;
+    font-size: calc(12px + 44 *(100vw/1980));
+    line-height: calc(12px + 38 *(100vw/1980));
     margin-bottom: 20px;
 }
 .book_demo{
@@ -151,6 +169,7 @@ h2.first_title{
 .book_demo h2{
     margin-bottom: 40px;
 }
+
 .trusted_img{
     margin-top: 80px;
     background:url(./images/trusted-by.svg);
@@ -158,31 +177,38 @@ h2.first_title{
     background-repeat: no-repeat;
     height: 900px;
     max-width: 100%;
+    margin-bottom: 250px;
 }
-.slide_item{
-    max-width: 840px;
-    background-color:#241c28;
-    height: 100%;
-    border-radius:25px;
-    padding: 40px;
+.reviews{
+    width: 340px;
+    margin: 0 auto 80px;
 }
-#slide1{
-    position: absolute;
-    left: 50%;
-    z-index: 8;
-    transform: translateX(-50%);
-}
-#slide2{
-    z-index: 7;
-    transform: translateX(50%) rotate(-5deg);
-}
-#slide3{
-    z-index: 6;
-    transform: translateX(-50%) rotate(5deg);
+/* ------- */
+.swiper {
+    width: 840px;
+    height: 400px;
+    margin-bottom: 350px;
+  }
+
+  .swiper-slide {
+    background-color:#2A212F;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
     
+    color: #fff;
+  }
+  .slide_content{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
-}
-.slide_logo{
+    padding:40px 40px 0 40px;
+  }
+  .slide_text{
+    margin-bottom: 30px;
+  }
+  .slide_logo{
     background-color:#140E17;
     background-size:contain;
     background-repeat: no-repeat;
@@ -194,21 +220,45 @@ h2.first_title{
     border-radius:50%;
     margin-right: 27px;
 }
-.logo_img{
+
+.logo_img1{
     background:url(./images/wow.webp);
     background-size:contain;
     background-repeat: no-repeat;
-    width:75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
-.slide_field{
-    align-items:center;
+.logo_img2{
+    background:url(./images/paysenger\ \(1\).webp);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
 }
-.slide_content{
-    display: flex;
-    justify-content: left;
-    align-items:center;
+.logo_img3{
+    background:url(./images/Pixelynx_logo.webp);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
 }
+.swiper-button-next{
+    color:#ffffff;
+    
+}
+.swiper-button-next::after{
+    margin-left: 95px;
+}
+.swiper-button-prev::after{
+    margin-right: 95px;
+}
+.swiper-button-prev{
+    color:#ffffff;
+}
+
+
+/* ----------- */
 h5{
     font-size: 28px;
 }
@@ -260,24 +310,132 @@ h5{
      margin-top: 120px;
      position: relative;
 }
-.next{
-    background: url(./images/icons8-вперед-90.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: 185px;
-    right: 240px;
+
+@media (max-width:1500px){
+    .card{
+        width: 400px;
+        height: 600px;
+        padding: 17% 25px 0 25px;
+        justify-content: center;
+    }
+    .wrapper{
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+}
+@media (max-width:1300px){
+    .card{
+        padding: 27% 25px 0 25px;
+    }
+    .card_field{
+        flex-direction: column;
+        align-items:center;
+    }
+    header{
+        flex-direction: column;
+        align-items:center;
+    }
+    .logo{
+        margin-bottom: 45px;
+    }
+    .first_content{
+        margin-left: 27px;
+        margin-top: 130px;
+    }
+    .reviews{
+        display: none;
+    }
+    .swiper{
+        display: none;
+    }
+    
+}
+@media (max-width:900px){
+    .card{
+        width: 300px;
+        height: 400px;
+        padding: 37% 15px 0 15px;
+        justify-content: center;
+    }
+    .card_field{
+        gap: 0px;
+    }
+    .new_nft_part{
+        flex-direction: column;
+        align-items:center;
+    }
+    .img{
+        max-height: 350px;
+        max-width: 350px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .new_nft_part{
+        padding-top:  20px;
+    }
+  
+    .first_title{
+        box-sizing:border-box;
+        
+    }
+    p{
+        box-sizing:border-box;
+        max-width: 330px;
+    }
+    .book_demo{
+        padding-top: 0;
+        margin-bottom: 0;
+        height: 600px;
+    }
+    .trusted_img{
+        height: 525px;
+    }
+}
+@media (max-width:470px){
+    .sign_up{
+        margin-right: 35px;
+    }
+    .login{
+       margin-left: 35px;
+    }
+    .card{
+        width: 300px;
+        height: 400px;
+        padding: 60% 15px 0 15px;
+        justify-content: center;
+    }
+    .wrapper{
+        margin-bottom: 150px;
+    }
+    .book_demo{
+        height: 500px;
+    }
+    .trusted_img{
+        height: 325px;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        width: 340px;
+        margin: 0 auto 10px;
+    }
+    .box{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .book_demo{
+        height: 400px;
+        
+        background-size: contain;
+        background-repeat:no-repeat;
+       
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+    .btn{
+        
+            display: flex;
+           justify-content: center;
+        
+    }
 }
 
-.prev{
-    background: url(./images/icons8-назад-90.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: 185px;
-    left: 240px;
-}

@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,6 +29,9 @@
         <div class="first_content flex_column">
             <h2 class="first_title">CollectiveWEB New reality for your business</h2>
             <p>Welcome to metaverse designed to connect, create, collaborate and celebrate in entirely new way.</p>
+            
+        </div>
+        <div class="btn box">
             <a class="button" href="">book a demo</a>
         </div>
     </section>
@@ -47,18 +53,19 @@
         </div>
         <div class="offers">
             <div class="wrapper box ">
-                <h2>CollectiveWEB offers</h2>
+                <h2 class="flex_row">CollectiveWEB offers</h2>
                 <div class="card_field box flex_row">
+                    
                     <div id="card_1" class="card background">
-                        <h2>Virtual twin</h2>
+                        <h2 class="">Virtual twin</h2>
                         <p>The metaverse is borderless! Your brand’s virtual twin will provide global, accessible experience for everyone</p>
                     </div>
                     <div id="card_2" class="card background">
-                        <h2>Web3 presence</h2>
+                        <h2 class="">Web3 presence</h2>
                         <p>New chapter of the Internet is the new chapter of your brand. Join the Web3 era through the virtual space, powered by CollectiveWEB</p>
                     </div>
                     <div id="card_3" class="card background">
-                        <h2>New form of communication</h2>
+                        <h2 class="">New form of communication</h2>
                         <p>Real through virtual. Attract new customers and increase the CTR by 30% with the latest communication format</p>
                     </div>
                 </div>
@@ -73,69 +80,107 @@
             <h2>Trusted by</h2>
         </div>
         <div class="trusted_img"></div>
-        <div class="wrapper box flex_column slide_field ">
-            <h2>Reviews</h2>
-            <div class="flex_row slide_wapper">
-
-                <div class="next"></div>
-                <div class="prev"></div>
-                <div id="slide1" class="slide_item">
-                
-                    <div class="text"><p>
-                        «The whole collaboration was a win-win. Our project resulted in doubling the amount of attendees, we’ve received good feedback from a whole bunch of guests about the one-of-a-kind experience they’ve had, and the emails are still coming! Great job, what else to say.»
-                    </p></div>
-                    <div class="slide_content">
-                        <div class="slide_logo">
-                            <div class="logo_img"></div>
-                        </div>
-                        <div class="slide_comment">
-                            <h5>
-                                WoW1 Summit metaverse
-                            </h5>
-                        </div>
         
+<div class="reviews">
+    <h2>Reviews</h2>
+</div>
+        
+        
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide_content  ">
+                    <div class="slide_text">
+                        <p>
+                            «The whole collaboration was a win-win.
+                        Our project resulted in doubling the amount of attendees,
+                        we’ve received good feedback from a whole bunch of guests
+                        about the one-of-a-kind experience they’ve had, and the emails
+                        are still coming! Great job, what else to say.»
+                        </p>
+                        
+                        
+                    </div>
+                    <div class="slide_footer flex_row">
+                        <div class="slide_logo">
+                            <div class="logo_img logo_img1"></div>
+                        </div>
+                        <div class="slide_comment flex_column">
+                            <h5>
+                                WoW Summit metaverse
+                            </h5>
+                            
+                        </div>
                     </div>
                 </div>
-                <div id="slide2" class="slide_item">
-                    
-                    <div class="text"><p>
-                        «The whole collaboration was a win-win. Our project resulted in doubling the amount of attendees, we’ve received good feedback from a whole bunch of guests about the one-of-a-kind experience they’ve had, and the emails are still coming! Great job, what else to say.»
-                    </p></div>
-                    <div class="slide_content">
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_content ">
+                    <div class="slide_text">
+                        <p>
+                            
+                            «We were impressed by the teams’ creativity,
+                            dedication and attention to details.
+                            Looking forward for the future projects.»
+                        
+                        </p>
+                        
+                        
+                    </div>
+                    <div class="slide_footer flex_row">
                         <div class="slide_logo">
-                            <div class="logo_img"></div>
+                            <div class="logo_img logo_img2"></div>
                         </div>
-                        <div class="slide_comment">
+                        <div class="slide_comment ">
                             <h5>
-                                WoW2 Summit metaverse
+                                Paysenger
                             </h5>
+                            
                         </div>
-        
                     </div>
                 </div>
-                <div id="slide3" class="slide_item">
-                
-                    <div class="text"><p>
-                        «The whole collaboration was a win-win. Our project resulted in doubling the amount of attendees, we’ve received good feedback from a whole bunch of guests about the one-of-a-kind experience they’ve had, and the emails are still coming! Great job, what else to say.»
-                    </p></div>
-                    <div class="slide_content">
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slide_content flex_column">
+                    <div class="slide_text">
+                        <p>
+                            
+                           
+                            «I’ve said it before and I'll say it again.
+                            Forget everything you heard about the metaverse.
+                            This is a real game-changer in the industry,
+                            the most advanced platform you can possibly get!!
+                            Thank you all for doing what you’re doing and for
+                            what you’ve done for Inder.»
+                        
+                        
+                        </p>
+                        
+                        
+                    </div>
+                    <div class="slide_footer flex_row">
                         <div class="slide_logo">
-                            <div class="logo_img"></div>
+                            <div class="logo_img logo_img3"></div>
                         </div>
-                        <div class="slide_comment">
+                        <div class="slide_comment flex_column">
                             <h5>
-                                WoW3 Summit metaverse
+                                Pixelinx
                             </h5>
+                            
                         </div>
-        
                     </div>
                 </div>
-
-
+              </div>
+             
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
 
-         
-        </div>
+
+
         <div class="box flex_column  ">
             <div class="img_circl"></div>
            <div class="about_us">
@@ -160,8 +205,11 @@
         </div>
       
     </section>
-   
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+   
 
    
 </body>
